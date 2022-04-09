@@ -100,7 +100,7 @@ header{
     justify-content: space-between;
     flex-flow: column;
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 3rem 2rem 3rem;
     
 }
 header .user img{
