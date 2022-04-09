@@ -46,6 +46,7 @@ section{
     padding: 1rem 5%;
 }
 .btn{
+    position: relative;
     padding: .7rem 3rem;
     background: #333;
     color: #fff;
@@ -61,6 +62,7 @@ section{
 
 }
 .btn:hover{
+    
     background:var(--yellow);
 }
 .heading{
@@ -78,7 +80,7 @@ section{
     color: var(--yellow);
 }
 header .follow a{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color:#fff;
     margin:0 .7rem;
 }
@@ -89,21 +91,21 @@ header .follow a:hover{
 header{
     position: fixed;
     top: 0;left: 0;bottom: 0;
-    z-index: 1000;
+    z-index: 500;
     height: 100%;
     width:35rem;
     background:#1a1a1a ;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-flow: column;
     text-align: center;
-    /* padding: 0rem rem; */
+    padding: 1rem 2rem;
     
 }
 header .user img{
-    height: 17rem;
-    width: 17rem;
+    height: 13rem;
+    width: 13rem;
     border-radius: 50%;
     object-fit:cover;
     margin-bottom: 1rem;
@@ -111,11 +113,11 @@ header .user img{
     border: .7rem solid var(--yellow);
 }
 header .user .name{
-    font-size: 3rem;
+    font-size: 2rem;
     color: #fff;
 }
 header .user .post{
-    font-size: 2rem;
+    font-size: 1rem;
     color:#eee;
 }
 header .navbar{
@@ -134,7 +136,7 @@ header .navbar ul li a{
     margin: 2rem 0;
     background: #333;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 5rem;
 
 }
@@ -155,39 +157,52 @@ header .navbar ul li a:hover{
 }
 .home{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: column;
-    padding: 5rem 15rem;
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
-    /* gap: 1.5rem; */
+    padding: 0rem 15rem;
+  
+}
+.home::before {    
+    content: "";
+    background-image: url(vishwangbg1.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
 }
 .home h3{
+    position: relative;
     font-size: 2.5rem;
     color: #fff;
 
 }
 .home h1{
+    position: relative;
     font-size: 5rem;
     color: #fff;
     
 }
 .home h1 span{
+    position: relative;
     color: var(--yellow);
 }
 .home p{
+    position: relative;
     font-size: 2rem;
     color: #eee;
     padding: 1rem 0;
     
 }
-.home .image{
+/* .home .image{
     flex:1 1 40rem;
 }
 
 .home .image img{
     width:100%;
-}
+} */
 .about .row{
    display: flex;
    align-items: center;
