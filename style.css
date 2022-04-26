@@ -22,7 +22,7 @@
 html{
     font-size:62.5%;
     overflow-x:hidden;
-    scroll-behavior: smooth;
+    
 }
 html::-webkit-scrollbar{
     width:1.4rem;
@@ -41,6 +41,11 @@ body{
     padding-left: 30rem;
 
 }
+a:link {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+  }
 section{
     min-height: 100vh;
     padding: 1rem 5%;
